@@ -21,17 +21,12 @@ class Person
         @age = value
     end
 
-    def is_of_age
-        if @age >= 18
-            true
-        else 
-            false
-        end
+    def is_of_age?
+       @age>=18
     end
-    def can_use_services
-        if @parent_permission = true
-            true
-        end
+    def can_use_services?
+        is_of_age? || @parent_permission
+    end
 end
 
 private:is_of_age
