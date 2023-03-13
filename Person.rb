@@ -27,6 +27,11 @@ class Person
         else 
             false
         end
+    end
+    def can_use_services
+        if @parent_permission = true
+            true
+        end
 end
 
 private:is_of_age
