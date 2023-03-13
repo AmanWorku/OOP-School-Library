@@ -1,4 +1,4 @@
-# teacher section
+# Teacher section
 
 class Teacher < Person
   def initialize(age, specialization, name = 'Unknown', parent_permission: true)
