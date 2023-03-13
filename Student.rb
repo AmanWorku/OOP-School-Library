@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 class Student < Person
-    def initialize(age, name="Unknown", parent_permission=true, classroom)
-        super(age, name, parent_permission)
-        @classroom = classroom
-      end
-    def play_honky
-        "¯\\(ツ)/¯"
-    end
+  def initialize(age, classroom, name = 'Unknown', parent_permission = true)
+    super(age, name, parent_permission)
+    @classroom = classroom
+  end
+
+  def play_honky
+    '¯\\(ツ)/¯'
+  end
 end
