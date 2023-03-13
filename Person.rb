@@ -20,4 +20,13 @@ class Person
     def age=(value)
         @age = value
     end
+
+    def is_of_age
+        if @age >= 18
+            true
+        else 
+            false
+        end
 end
+
+private:is_of_age
