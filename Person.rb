@@ -14,8 +14,10 @@ class Person
     def name
         @name
     end
-    def parent_permission
-        @parent_permission
+    def name=(value)
+        @name = value
     end
-
+    def age=(value)
+        @age = value
+    end
 end
