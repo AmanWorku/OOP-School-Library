@@ -24,8 +24,6 @@ class Person < Nameable
   end
 
   def correct_name
-    @name.capitalize
+    @name
   end
 end
-
-private :of_age?
