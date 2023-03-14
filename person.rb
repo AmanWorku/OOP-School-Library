@@ -1,6 +1,6 @@
 # Person section
 
-class Person < nameable
+class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
     @id = Random.rand(1..1000)
     @name = name
