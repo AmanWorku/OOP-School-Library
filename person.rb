@@ -1,7 +1,11 @@
 # Person section
+require './nameable'
+require './capitalize_decorator'
+require './trimmer_decorator'
 
-class Person
+class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
     @id = Random.rand(1..1000)
     @name = name
     @age = age
@@ -18,6 +22,8 @@ class Person
   def can_use_services?
     of_age? || @parent_permission
   end
-end
 
-private :of_age?
+  def correct_name
+    @name
+  end
+end
