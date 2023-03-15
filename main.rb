@@ -26,15 +26,16 @@ def main
     when 3
       create_person
     when 4
-
+        create_book
     when 5
-
+        create_rental
     when 6
-
+        list_rentals
     when 7
-
+        return
     end
   end
   end
-
 end
+
+main
