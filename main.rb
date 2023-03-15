@@ -1,4 +1,7 @@
 require './app'
+require './person'
+require './teacher'
+require './student'
 
 def main
   loop do
@@ -32,6 +35,8 @@ def main
 
     end
   end
+  end
+
   def create_person
     puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
     type = gets.chomp
