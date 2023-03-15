@@ -18,11 +18,11 @@ def main
     
         case test
         when 1
-            
+            list_books
         when 2
-
+            list_people
         when 3
-
+            
         when 4
 
         when 5
