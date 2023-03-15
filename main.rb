@@ -18,23 +18,22 @@ def main
 
     input = gets.champ
 
-    case test
+    case input
     when 1
-      list_books
+      app.list_books
     when 2
-      list_people
+      app.list_people
     when 3
-      create_person
+      app.create_person
     when 4
-        create_book
+      app.create_book
     when 5
-        create_rental
+      app.reate_rental
     when 6
-        list_rentals
+      app.list_rentals
     when 7
-        return
+      return
     end
-  end
   end
 end
 
