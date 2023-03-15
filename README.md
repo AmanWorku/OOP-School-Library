@@ -18,8 +18,11 @@
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
+- [🙏  Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -90,7 +93,9 @@ $ git clone https://github.com/AmanWorku/OOP-School-Library.git
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **I would appreciate your suggestions.**
+- [ ] **Adding more classes like Music, Games, Movies.**
+- [ ] **Implement a way to search a book with its name.**
+- [ ] **Add an option to choose to display names in ascending or descending order.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
