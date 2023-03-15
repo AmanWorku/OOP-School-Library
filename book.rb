@@ -1,10 +1,8 @@
 def create_book
-    puts "Enter the title of the book:"
+    puts "Title:"
     title = gets.chomp
-    puts "Enter the author of the book:"
+    puts "Author:"
     author = gets.chomp
-    puts "Enter the ISBN of the book:"
-    isbn = gets.chomp.to_i
-
+    puts "Book created successfuly!"
     @books << Book.new(title, author, isbn)
 end
