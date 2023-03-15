@@ -37,29 +37,4 @@ def main
   end
   end
 
-  def create_person
-    puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
-    type = gets.chomp
-
-    case type
-    when 1
-      print 'Age: '
-      age = gets.chomp.to_i
-      print 'Name: '
-      name = gets.chomp
-      print 'Has parent permission? [Y/N]:  '
-      permission = gets.chomp.downcase
-      @people << Student.new(age, name, permission)
-    when 2
-    print 'Age: '
-      age = gets.chomp.to_i
-      print 'Name: '
-      name = gets.chomp
-      print 'Specialization:  '
-      specialization = gets.chomp
-      @people << Teacher.new(age ,name, specialization)
-    else
-      puts 'Invalid input, person not created'
-    end
-  end
 end
