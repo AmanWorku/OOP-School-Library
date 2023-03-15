@@ -9,6 +9,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -42,6 +43,19 @@
 </details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **Add a person (Student and Teacher)**
+- **Create a rental**
+- **Add books**
+- **List data of people, books and rentals**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
