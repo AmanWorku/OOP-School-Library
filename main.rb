@@ -1,7 +1,4 @@
 require './app'
-require './person'
-require './teacher'
-require './student'
 
 def main
   loop do
