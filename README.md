@@ -9,6 +9,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -18,8 +19,11 @@
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
+- [🙏  Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -39,6 +43,19 @@
 </details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **Add a person (Student and Teacher)**
+- **Create a rental**
+- **Add books**
+- **List data of people, books and rentals**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
@@ -90,7 +107,9 @@ $ git clone https://github.com/AmanWorku/OOP-School-Library.git
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **I would appreciate your suggestions.**
+- [ ] **Adding more classes like Music, Games, Movies.**
+- [ ] **Implement a way to search a book with its name.**
+- [ ] **Add an option to choose to display names in ascending or descending order.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
