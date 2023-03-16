@@ -35,7 +35,6 @@ class Main
         return
       end
     end
-    puts 'Thank you! Have a great day!'
   end
 end
 
