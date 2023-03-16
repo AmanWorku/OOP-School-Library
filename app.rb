@@ -26,7 +26,7 @@ class App
       puts 'There are no people.'
       return
     end
-    @people.each_with_index do |p|
+    @people.each do |p|
       puts "[#{p.class}] Name: #{p.name}, ID: #{p.id}, Age: #{p.age}"
     end
   end
