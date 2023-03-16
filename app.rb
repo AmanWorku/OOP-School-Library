@@ -26,8 +26,8 @@ class App
       puts 'There are no people.'
       return
     end
-    @people.each_with_index do |p, index|
-      puts "#{index + 1} [#{p.class}] Name: #{p.name}, ID: #{p.id}, Age: #{p.age}"
+    @people.each_with_index do |p|
+      puts "[#{p.class}] Name: #{p.name}, ID: #{p.id}, Age: #{p.age}"
     end
   end
 
@@ -44,26 +44,29 @@ class App
       puts 'Invalid input, person not created'
     end
   end
+
   def create_student
     print 'Age: '
-      age = gets.chomp.to_i
-      print 'Name: '
-      name = gets.chomp
-      print 'Has parent permission? [Y/N]:  '
-      permission = gets.chomp.downcase
-      @people << Student.new(age, name, parent_permission: permission)
-      puts 'Student created successfully!'
+    age = gets.chomp.to_i
+    print 'Name: '
+    name = gets.chomp
+    print 'Has parent permission? [Y/N]:  '
+    permission = gets.chomp.downcase
+    @people << Student.new(age, name, parent_permission: permission)
+    puts 'Student created successfully!'
   end
+
   def create_teacher
     print 'Age: '
-      age = gets.chomp.to_i
-      print 'Name: '
-      name = gets.chomp
-      print 'Specialization:  '
-      specialization = gets.chomp
-      @people << Teacher.new(age, name, specialization: specialization)
-      puts 'Teacher created successfully!'
+    age = gets.chomp.to_i
+    print 'Name: '
+    name = gets.chomp
+    print 'Specialization:  '
+    specialization = gets.chomp
+    @people << Teacher.new(age, name, specialization: specialization)
+    puts 'Teacher created successfully!'
   end
+
   def create_book
     puts 'Title:'
     title = gets.chomp
