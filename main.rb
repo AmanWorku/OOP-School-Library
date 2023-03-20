@@ -10,7 +10,7 @@ class Main
     loop do
       actions = Actions.new
       actions.list_of_actions
-      
+
       input = gets.chomp
 
       case input.to_i
