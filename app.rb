@@ -26,7 +26,11 @@ class App
       puts 'There are no people.'
       return
     end
-    @people.each do |p|
+    display_people(@people)
+  end
+
+  def display_people(people)
+    people.each do |p|
       puts "[#{p.class}] Name: #{p.name}, ID: #{p.id}, Age: #{p.age}"
     end
   end
