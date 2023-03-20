@@ -6,24 +6,24 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏  Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 OOP School Library ](#-oop-school-library-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [👥 Author ](#-author-)
+    - [👤 **Aman Worku**:](#-aman-worku)
+    - [👤 **Salwa Ballouti**:](#-salwa-ballouti)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [:memo: License ](#memo-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -98,11 +98,15 @@ $ git clone https://github.com/AmanWorku/OOP-School-Library.git
 ## 👥 Author <a name="authors"></a>
 
 
-👤 **Aman Worku **
-
+### 👤 **Aman Worku**:
 - GitHub: [@Aman_on_GitHub](https://github.com/AmanWorku)
 - Twitter: [@Aman_on_Twitter](https://twitter.com/Amexworku)
 - LinkedIn: [@Aman_on_LinkedIn](https://www.linkedin.com/in/aman-worku-tsegaw/)
+  
+### 👤 **Salwa Ballouti**:
+- GitHub: [@Salwa99](https://github.com/Salwa99)
+- Twitter: [@SalwaBallouti](https://twitter.com/salwa_ballouti)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/salwa-ballouti)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
