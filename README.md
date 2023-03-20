@@ -16,7 +16,7 @@
     - [Setup](#setup)
     - [Install](#install)
   - [🚀 Live Demo ](#-live-demo-)
-  - [👥 Author ](#-author-)
+  - [👥 Authors ](#-authors-)
     - [👤 **Aman Worku**:](#-aman-worku)
     - [👤 **Salwa Ballouti**:](#-salwa-ballouti)
   - [🔭 Future Features ](#-future-features-)
@@ -93,7 +93,7 @@ $ git clone https://github.com/AmanWorku/OOP-School-Library.git
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 
 ### 👤 **Aman Worku**:
