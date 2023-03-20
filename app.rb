@@ -3,6 +3,7 @@ require './person'
 require './book'
 require './teacher'
 require './rental'
+require './actions'
 
 class App
   def initialize
@@ -36,9 +37,7 @@ class App
   end
 
   def create_person
-    puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
-    input = gets.chomp.to_i
-
+    input = select_person_type
     case input
     when 1
       create_student
@@ -49,33 +48,33 @@ class App
     end
   end
 
+  def select_person_type
+    puts 'Do you want to create a student (1) or a teacher (2)? [Input the number]: '
+    gets.chomp.to_i
+  end
+
   def create_student
-    print 'Age: '
-    age = gets.chomp.to_i
-    print 'Name: '
-    name = gets.chomp
-    print 'Has parent permission? [Y/N]:  '
-    permission = gets.chomp.downcase
+    get_input = Actions.new
+    age = get_input.get_input('Age: ', :to_i)
+    name = get_input.get_input('Name: ')
+    permission = get_input.get_input('Has parent permission? [Y/N]:  ', :downcase)
     @people << Student.new(age, name, parent_permission: permission)
     puts 'Student created successfully!'
   end
 
   def create_teacher
-    print 'Age: '
-    age = gets.chomp.to_i
-    print 'Name: '
-    name = gets.chomp
-    print 'Specialization:  '
-    specialization = gets.chomp
+    get_input = Actions.new
+    age = get_input.get_input('Age: ', :to_i)
+    name = get_input.get_input('Name: ')
+    specialization = get_input.get_input('Specialization:  ')
     @people << Teacher.new(age, name, specialization: specialization)
     puts 'Teacher created successfully!'
   end
 
   def create_book
-    puts 'Title:'
-    title = gets.chomp
-    puts 'Author:'
-    author = gets.chomp
+    get_input = Actions.new
+    title = get_input.get_input('Title:')
+    author = get_input.get_input('Author:')
     @books << Book.new(title, author)
     puts 'Book created successfuly!'
   end

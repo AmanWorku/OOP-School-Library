@@ -12,4 +12,10 @@ class Actions
     ]
     puts option
   end
+
+  def get_input(prompt, type = :to_s)
+    print prompt
+    input = gets.chomp
+    type == :to_i ? input.to_i : input
+  end
 end
