@@ -4,6 +4,7 @@ require './book'
 require './teacher'
 require './rental'
 require './actions'
+require './data/data_preserve'
 
 class App
   def initialize
