@@ -79,7 +79,7 @@ class App
     title = get_input.get_input('Title:')
     author = get_input.get_input('Author:')
     @books << Book.new(title, author)
-    save_data(@book, './data/books.json')
+    save_data(@books, './data/books.json')
     puts 'Book created successfuly!'
   end
 
