@@ -14,26 +14,29 @@ class App
   end
 
   def list_books
+    @books = read_data('./data/books.json')
     if @books.empty?
       puts 'There is no book.'
       return
     end
     @books.each do |book|
-      puts "Title: #{book.title} , Author: #{book.author}"
+      puts "Title: #{book['title']} , Author: #{book['author']}"
     end
   end
 
   def list_people
+    @people = read_data('./data/people.json')
     if @people.empty?
       puts 'There are no people.'
       return
     end
-    display_people(@people)
+    display_people
   end
 
-  def display_people(people)
-    people.each do |p|
-      puts "[#{p.class}] Name: #{p.name}, ID: #{p.id}, Age: #{p.age}"
+  def display_people
+    @people = read_data('./data/people.json')
+    @people.each do |p|
+      puts "Name: #{p['name']}, ID: #{p['id']}, Age: #{p['age']}"
     end
   end
 
@@ -113,14 +116,15 @@ class App
   end
 
   def list_rentals
+    @rentals = read_data('./data/rentals.json')
     get_input = Actions.new
     id = get_input.get_input('ID of person: ', :to_i)
 
-    rentals = @rentals.filter { |rental| rental.person.id == id }
+    rentals = @rentals.filter { |rental| rental['person']['id'] == id }
 
     puts 'Rentals:'
     rentals.each do |rental|
-      puts "Date: #{rental.date}, Book '#{rental.book.title}' by #{rental.book.author}"
+      puts "Date: #{rental['data']}, Book '#{rental['book']['title']}' by #{rental['book']['author']}"
     end
   end
 end
