@@ -7,6 +7,6 @@ Class Preserver
         File.write(file, json)
     end
     def read_data
-
+        
     end
 end

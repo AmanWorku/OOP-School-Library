@@ -60,6 +60,7 @@ class App
     name = get_input.get_input('Name: ')
     permission = get_input.get_input('Has parent permission? [Y/N]:  ', :downcase)
     @people << Student.new(age, name, parent_permission: permission)
+    save_data(@people, './data/people.json')
     puts 'Student created successfully!'
   end
 
@@ -69,6 +70,7 @@ class App
     name = get_input.get_input('Name: ')
     specialization = get_input.get_input('Specialization:  ')
     @people << Teacher.new(age, name, specialization: specialization)
+    save_data(@people, './data/people.json')
     puts 'Teacher created successfully!'
   end
 
@@ -77,6 +79,7 @@ class App
     title = get_input.get_input('Title:')
     author = get_input.get_input('Author:')
     @books << Book.new(title, author)
+    save_data(@book, './data/books.json')
     puts 'Book created successfuly!'
   end
 
@@ -104,6 +107,7 @@ class App
       date = get_input.get_input('Date: ')
 
       @rentals << Rental.new(date, @books[book_index], @people[person_index])
+      save_data(@rentals, './data/rentals.json')
       puts 'Rental created successfully'
     end
   end
