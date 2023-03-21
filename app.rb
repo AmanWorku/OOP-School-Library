@@ -88,6 +88,8 @@ class App
 
   def create_rental
     get_input = Actions.new
+    @books = read_data('./data/books.json')
+    @people = read_data('./data/people.json')
     if @books.empty?
       puts 'No book record found'
     elsif @people.empty?
@@ -95,14 +97,14 @@ class App
     else
       puts 'Select a book from the following list by number'
       @books.each_with_index do |book, index|
-        puts "#{index}) Title: #{book.title}, Author: #{book.author}"
+        puts "#{index}) Title: #{book['title']}, Author: #{book['author']}"
       end
 
       book_index = get_input.get_input('Book Index: ', :to_i)
 
       puts 'Select a person from the following list by number (not ID)'
       @people.each_with_index do |person, index|
-        puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+        puts "#{index})  Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
       end
 
       person_index = get_input.get_input('List Number: ', :to_i)
@@ -124,7 +126,7 @@ class App
 
     puts 'Rentals:'
     rentals.each do |rental|
-      puts "Date: #{rental['data']}, Book '#{rental['book']['title']}' by #{rental['book']['author']}"
+      puts "Date: #{rental['date']}, Book '#{rental['book']['title']}' by #{rental['book']['author']}"
     end
   end
 end
