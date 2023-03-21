@@ -8,8 +8,8 @@ end
 
 def read_data(file)
   if File.exist?(file)
-        data = File.read(file)
-        JSON.parse(data)
+    data = File.read(file)
+    JSON.parse(data)
   else
     []
   end
