@@ -3,9 +3,9 @@ require_relative '../rental'
 require_relative '../person'
 
 RSpec.describe Rental do
-    date = '22/03/2023'
-    book = Book.new('Watchmen', 'Ala Moore')
-    person = Person.new(25, 'Aman')
+  date = '22/03/2023'
+  book = Book.new('Watchmen', 'Ala Moore')
+  person = Person.new(25, 'Aman')
   subject(:rental) { described_class.new(date, book, person) }
 
   describe '#date' do
