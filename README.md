@@ -51,6 +51,7 @@
 - **Create a rental**
 - **Add books**
 - **List data of people, books and rentals**
+- **Save inserted data to file**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
