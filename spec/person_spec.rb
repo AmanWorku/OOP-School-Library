@@ -57,7 +57,7 @@ RSpec.describe Person do
   describe '#to_h' do
     let(:book) { Book.new('Babel', 'B.Salwa') }
     let(:date) { '12-02-2020' }
-  
+
     it 'Return a hash' do
       expected_hash = {
         age: 18,
@@ -69,17 +69,15 @@ RSpec.describe Person do
       expect(person.to_h).to eq(expected_hash)
     end
   end
-  
-  
-    describe '#correct_name' do
-      it 'Return the correct name of the person' do
-        person.name = 'Lolo'
-        expect(person.correct_name).to eq('Lolo')
-      end
-  
-      it 'Returns the default name if no name is given' do
-        expect(person.correct_name).to eq('Unknown')
-      end
+
+  describe '#correct_name' do
+    it 'Return the correct name of the person' do
+      person.name = 'Lolo'
+      expect(person.correct_name).to eq('Lolo')
+    end
+
+    it 'Returns the default name if no name is given' do
+      expect(person.correct_name).to eq('Unknown')
     end
   end
-
+end
