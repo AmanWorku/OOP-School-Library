@@ -1,4 +1,5 @@
 # Teacher section
+require_relative './person'
 
 class Teacher < Person
   def initialize(age, name, parent_permission: true, specialization: nil)

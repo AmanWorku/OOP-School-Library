@@ -51,6 +51,8 @@
 - **Create a rental**
 - **Add books**
 - **List data of people, books and rentals**
+- **Save inserted data to file**
+- **Unit test included to be tested using the command `rspec filename_spec.rb`**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,6 +86,20 @@ In the terminal, go to your file directory and run this command.
 
 ```
 $ git clone https://github.com/AmanWorku/OOP-School-Library.git
+```
+
+### Testing
+
+In the terminal, traverse to the directory where the test files are located using the following command:
+
+```
+$ cd spec
+```
+
+Then you can unit test by using the following command:
+
+```
+$ rspec filename_spec.rb
 ```
 ## 🚀 Live Demo <a name="live-demo"></a>
 
